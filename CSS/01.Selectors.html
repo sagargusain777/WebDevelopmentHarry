@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* Element Selector */
+        div{
+            background-color: blue;
+            color:black;
+        }
+        /* Class Selector */
+        .green{
+            background-color: green;
+            color: black;
+        }
+        /* Id Selector */
+        #Yellow{
+            background-color: yellow;
+            color:magenta;
+
+        }
+        /* Child Selector */
+        div>div{
+        background-color: aquamarine;
+        color: brown;
+        text-decoration: underline;
+        }
+        
+        div>span{
+            background-color: lightblue;
+        }
+        /* Descendant Selector */
+        div p{
+            background-color: greenyellow;
+            text-decoration: underline;
+
+        }
+        /* Universal Selector */
+        *{
+            margin: 5;
+            padding: 0;
+        }
+        /* Pseudo Selector */
+        a:visited{
+            color: red;
+
+        }
+        a:hover{
+            background-color: blue;
+        }
+        a:link{
+            color: magenta;
+        }
+        a:active{
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Selectors</h1>
+    <hr>
+    <h2>Element Selector </h2>
+    <div>   
+         <p> This area is Styled using element Selector</p>
+         <p> I am  Learning Css From Harry</p>
+         <p> Drawback: The moment you create another element like  you have a div and you have applied css to it. The moment you create another div the css property of Previous div is also applied
+            <div> This is the First div with applying css </div>
+            <div> This is the Second div with no property</div>
+        </p>
+    </div>
+    <hr>
+    <h2>Class Selector(.)</h2>
+    <div>
+        <p class="green">I am Styled using class Selector</p>
+
+    </div>
+    <hr>
+
+    <h2>Id Selector(#)</h2>
+    <p>
+        <div id="Yellow">
+            I am styled using Id selector.
+            I will be unique .
+
+        </div>
+    </p>
+    
+    <hr>
+    <h2>Child Selector</h2>
+    <div>
+        <div>
+            I am styled using Child Selector.<br>
+            I will be working all day Learning Css
+        </div>
+    </div>
+    <div>
+        <span>I am a span inside a div element</span>
+    </div>
+    
+    <hr>
+    <h2>Descendant Selector</h2>
+    <div>
+        <article>
+            <p>
+                I am inside article which is inside div.
+            </p>
+        </article>
+    </div>
+    <hr>
+    <h2><underline>Pseudo Selector</underline></h2>
+    <a href="https://www.google.com">Going to Google</a>
+    <a href="https://www.meesho2.com">Going to Meesho</a>
+
+</body>
+</html>
